@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Coors Brewing</title>
+		<!-- link to reset first!!! -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Merriweather+Sans:wght@300;700&display=swap" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet" type="text/css" >
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		
+	</head>
+	<body>
+		<!-- Content Goes Here -->
+		<div id="validationContainer">
+		<h1 class="hidden">Coors Brewing Company</h1>
+		
+			<img src="images/logo-validation.svg" width="296" height="134" alt="CoorS logo" id="validationLogo">
+			<h2>Are you Legal for the Drinking Age?</h2>
+			<form id="ageForm" action="form.php" method="post">
+				<label for="birthday">Enter your birthday</label>
+                <input type="text" required id="birthday" size="20" placeholder="DD/MM/YY">
+			</form>
+
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+
+</html>
