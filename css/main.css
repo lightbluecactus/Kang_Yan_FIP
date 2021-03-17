@@ -74,7 +74,7 @@ p,a
 {
 	display: flex;
 	flex-direction: row;
-	margin-left: 290px;	
+	margin-left: 180px;	
 	margin-top: 20px;
 	margin-right: 60px;
 }
@@ -82,12 +82,12 @@ p,a
 #mainNav ul li a
 {
 	display: block;
-	width: 80px;
+	width: 100px;
 	height: 25px;
 	color: #eee8e1;
 	text-align: center;
 	margin-left: 15px;
-	padding-top: 10px;
+	padding: 10px 5px 3px 5px;
 	transition: all .3s linear;
 }
 
@@ -146,6 +146,7 @@ p,a
 	margin-left: 60px;
 	position: sticky;
 	top: 120px;
+	cursor: pointer;
 }
 
 #intro
@@ -306,7 +307,7 @@ p,a
 	text-align: center;
 	color: #eee8e1;
 	font-size: 30px;
-	font-weight: 700px;
+	font-weight: 700;
 	background-color: rgba(0,0,0,.6);
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -343,7 +344,7 @@ p,a
 	text-align: center;
 	color: #eee8e1;
 	font-size: 30px;
-	font-weight: 700px;
+	font-weight: 700;
 	background-color: rgba(0,0,0,.6);
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -491,7 +492,7 @@ p,a
 form
 {
 	font-family: 'Merriweather Sans', sans-serif;
-	font-weight: 300px;
+	font-weight: 300;
 	color: #24292f;
 	font-size: 16px;
 }
