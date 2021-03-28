@@ -36,7 +36,7 @@ h3
 	font-weight: 600;
 }
 
-p,a
+p,a,article
 {
 	font-family: 'Merriweather Sans', Arial, sans-serif;
 	font-weight: 300;
@@ -47,13 +47,14 @@ p,a
 
 #mainHeader
 {
-	height: 80px;
-	background-color: #24292f;
+	height: 70px;
+	background-color: #fff;
+	opacity: .9;
 	display: flex;
 	flex-direction: row;
 	position: sticky;
 	top: 0;
-	box-shadow: 0 5px 3px rgba(0,0,0,.2);
+	box-shadow: 0 5px 3px rgba(0,0,0,.15);
 	z-index: 10;
 }
 
@@ -75,7 +76,7 @@ p,a
 	display: flex;
 	flex-direction: row;
 	margin-left: 180px;	
-	margin-top: 20px;
+	margin-top: 15px;
 	margin-right: 60px;
 }
 
@@ -84,7 +85,7 @@ p,a
 	display: block;
 	width: 100px;
 	height: 25px;
-	color: #eee8e1;
+	color: #24292f;
 	text-align: center;
 	margin-left: 15px;
 	padding: 10px 5px 3px 5px;
@@ -93,16 +94,19 @@ p,a
 
 #mainNav ul li a:hover
 {
-	background-color: #3c444c;
+	background-color: #F3F2F1;
 	border-radius: 10px;
 }
 
 #hero
 {
 	width: 1000px;
-	height: 540px;
+	height: 520px;
 	background: url('../images/home-hero.jpg') no-repeat;
-	box-shadow: 0 10px 10px rgba(0,0,0,.3) inset;
+	/*position: sticky;
+	top: 0;*/
+	overflow: hidden;
+	z-index: -10;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -110,31 +114,49 @@ p,a
 
 #hero h2
 {
-	width: 260px;
-	margin-left: 60px;
+	margin-right: 120px;
 	color: #eee8e1;
-	font-size: 60px;
+	font-size: 54px;
 	letter-spacing: 2px;
-	background-color: rgba(36,41,47,.8);
-	padding-left: 80px;
-	padding-top: 30px;
-	padding-bottom: 10px;
+	text-align: right;
+		
 }
 
 #hero h3
 {
-	width: 260px;
-	margin-left: 60px;
-	margin-bottom: 100px;
+	margin-right: 120px;
+	margin-bottom: 15px;
 	color: #eee8e1;
 	font-size: 18px;
 	letter-spacing: -1px;
-	background-color: rgba(36,41,47,.8);
-	padding-left: 80px;
-	padding-bottom: 30px;
-
+	text-align: right;
+	/*background-color: rgba(36,41,47,.8);
+	padding: 0 80px 30px 20px;*/
 }
 
+#heroHeading
+{
+	width: 1000px;
+	background-color: rgba(36,41,47,.8);
+	padding: 30px 20px 10px 80px; /*trbl*/
+	clip-path: polygon(100% 0, 100% 100%, 55% 100%, 0 100%, 0 31%);
+	position: absolute;
+	animation: 1.5s linear slidein;
+}
+
+@keyframes slidein {
+	0% {
+		bottom: 590px;
+	}
+
+	80% {
+		bottom: 680px;
+	}
+
+	100% {
+		bottom: 700px;
+	}
+}
 
 #intro::before
 {
@@ -228,7 +250,7 @@ p,a
 {
 	width: 1000px;
 	height: 200px;
-	background-color: #000;
+	background-color: #eee8e1;
 	display: flex;
 	flex-direction: row;
 }
@@ -275,10 +297,24 @@ p,a
 #footerNav ul li a
 {
 	text-decoration: none;
-	color: #eee8e1;
+	color: #24292f;
+}
+
+#footerNav ul li a:hover
+{
+	border-bottom: dotted 1px #24292f; 
 }
 
 /* start of about page */
+
+article
+{
+	color: #24292f;
+	font-size: 16px;
+	margin: 0 100px 100px 100px;
+	line-height: 38px;
+	letter-spacing: 1px;
+}
 
 #aboutResource
 {
@@ -365,6 +401,7 @@ p,a
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-bottom: 50px;
 }
 
 #community h2
