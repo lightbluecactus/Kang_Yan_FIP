@@ -4,7 +4,7 @@
 	 viewBox="0 0 421 421" style="enable-background:new 0 0 421 421;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#eee8e1;}
-	.st0:hover{fill:#ffd314;}
+	.st0:hover{fill:#ffd314 !important;}
 </style>
 <path id="bottle_1_" class="st0" d="M210.5,0C94.2,0,0,94.2,0,210.5S94.2,421,210.5,421S421,326.8,421,210.5S326.8,0,210.5,0z
 	 M194.3,143.2c0.3-1,0.6-2,1-3c5.9-18.4,12.6-38.9,16.8-48c1.3-2.7,4-8.5,7.2-15.2c3.8-8.1,9.5-20.1,12.9-27.5
