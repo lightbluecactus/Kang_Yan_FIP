@@ -171,7 +171,6 @@ p, a, article
 
 #mainFooter
 {
-	width: 1000px;
 	height: 200px;
 	background-color: #24292F;
 	display: flex;
@@ -207,6 +206,7 @@ p, a, article
 {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	margin-left: 45px;
 	margin-top: 35px;
 }
@@ -223,10 +223,11 @@ p, a, article
 	font-size: 12px;
 }
 
-#footerNav ul li a:hover
+/*#footerNav ul li a:hover
 {
 	border-bottom: dotted 1px #535F78; 
-}
+}*/
+
 
 /*start of homepage*/
 
@@ -322,7 +323,7 @@ p, a, article
 
 #advertise
 {
-	height: 160px;
+	min-height: 160px;
 	order: -1;
 	margin-bottom: 40px;
 }
@@ -331,7 +332,8 @@ p, a, article
 {
 	display: flex;
 	flex-direction: column;
-	flex: 1 0 auto;
+	flex: 1 0 180px;
+	text-align: center;
 }
 
 #productList>h2
@@ -341,14 +343,59 @@ p, a, article
 	text-align: center;
 	background-color: #eee8e1;
 	padding: 5px 0;
+	margin-bottom: 30px;
 }
 
 
 #productList div
 {
-	min-height: 180px;
-	min-width: 180px;
-	margin: 60px 70px;
+	margin: 20px auto;
+}
+
+#productList div:last-child
+{
+	margin-bottom: 90px;
+}
+
+#productList img
+{
+	height: 180px;
+}
+
+#productList p
+{
+	font-size: 20px;
+	color: #eee8e1;
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+#homeBeer
+{
+	background: url(../images/icon-bottle.svg) no-repeat;
+	background-size: 20px;
+	margin-left: 10px;
+}
+
+#homeBeer
+{
+	background: url(../images/icon-bottle.svg) no-repeat;
+	background-size: 20px;
+	margin-left: 10px;
+}
+
+#homePack
+{
+	background: url(../images/icon-pack.svg) no-repeat;
+	background-size: 20px;
+	margin-left: 10px;
+}
+
+#homeCard
+{
+	background: url(../images/icon-vip.svg) no-repeat;
+	background-size: 20px;
+	margin-left: 5px;
 }
 
 #action
