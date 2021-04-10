@@ -86,6 +86,7 @@ p, a, article
 {
 	display: block;
 	background-color: #fff;
+	opacity: 0.95;
 	position: absolute;
 	top: 90px;
 	right: 0;
@@ -229,130 +230,134 @@ p, a, article
 
 /*start of homepage*/
 
-
 #hero
 {
-/*	min-width: 320px;*/
-	height: 380px;
+	height: 641px;
 	background: url('../images/home-hero-mobile.gif') no-repeat;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	background-size: cover;
+	position: relative;
 }
 
 #hero h2
 {
-	margin-right: 120px;
 	color: #eee8e1;
 	font-size: 54px;
-	letter-spacing: 2px;
+	letter-spacing: 2.5px;
 	text-align: right;
-		
 }
 
 #hero h3
 {
-	margin-right: 120px;
 	margin-bottom: 15px;
 	color: #eee8e1;
-	font-size: 18px;
+	font-size: 16px;
 	letter-spacing: -1px;
 	text-align: right;
-	/*background-color: rgba(36,41,47,.8);
-	padding: 0 80px 30px 20px;*/
 }
 
 #heroHeading
 {
-/*	width: 1000px;*/
 	background-color: rgba(36,41,47,.8);
-	padding: 30px 20px 10px 80px; /*trbl*/
-	/*clip-path: polygon(100% 0, 100% 100%, 55% 100%, 0 100%, 0 31%);*/
+	padding: 30px 45px 10px 80px; 
 	display: block;
 	position: absolute;
-	animation: 1.5s linear slidein;
-}
-
-/*@keyframes slidein {
-	0% {
-		right: -1000px;
-	}
-
-	80% {
-		right: 300px;
-	}
-
-	100% {
-		right: 400px;
-	}
-}*/
-
-#intro::before
-{
-	content: '';
-	display: block;
-	width: 140px;
-	height: 187px;
-	background: url('../images/logo-badge-homepage.png');
-	margin-left: 60px;
-	position: sticky;
 	top: 100px;
-	cursor: pointer;
+	right: 0;
 }
 
-#intro
+#introText
 {
-	width: 1000px;
-	padding-top: 50px;
-	background: url('../images/bckgrd-paper.jpg') repeat;
+	background-color: #eee8e1;
+	/*background: url('../images/bckgrd-paper.jpg') repeat;*/
 }
 
-#intro *
+#introText h2
 {
-	
-	margin-right: 60px;
-	margin-left: 280px;
-}
-
-#intro h2
-{
-	margin-top: -100px;
 	color: #24292f;
-	font-size: 48px;
+	font-size: 44px;
 	letter-spacing: 2px;
 	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 20px;
 }
 
-#intro h3
+#introText h3
 {
-	color: #24292f;
-	font-size: 20px;
+	color: #eee8e1;
+	font-size: 16px;
 	letter-spacing: -1px;
-	padding-top: 5px;
-	text-align: right;
+	text-align: center;
+	background-color: #b51a1e;
+	clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+	height: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 40%;
+	margin-right: 5%;
 }
 
-#intro p
+#introText p
 {
 	color: #24292f;
 	font-size: 16px;
-	padding-top: 30px;
-	line-height: 26px;
+	line-height: 30px;
 	letter-spacing: 1px;
 	text-align: center;
-	padding-bottom: 150px;
-	margin-left: 340px;
-	margin-right: 180px;
+	margin: 30px 50px 0 50px;
+	padding-bottom: 100px;
 }
 
-#homeGallery
+#galleryCon
 {
-	width: 1000px;
-	height: 570px;
 	background: url('../images/bckgrd-red.jpg') repeat;
+	display: flex;
+	flex-direction: column;
+}
+
+#featuredCon
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#advertise
+{
+	height: 160px;
+	order: -1;
+	margin-bottom: 40px;
 }
 
 #productList
+{
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+
+#productList>h2
+{
+	font-size: 26px;
+	color: #B51A1E;
+	text-align: center;
+	background-color: #eee8e1;
+	padding: 5px 0;
+}
+
+
+#productList div
+{
+	min-height: 180px;
+	min-width: 180px;
+	margin: 60px 70px;
+}
+
+#action
+{
+	display: none;
+}
+
+
+/*#productList
 {
 	width: 660px;
 	margin-left: 280px;
@@ -379,7 +384,65 @@ p, a, article
 	background-color: #d4d4d4;
 	margin-left: 280px;
 	margin-right: 60px;
+}*/
+
+/*@media screen and(min-width: 540px) {
+	#hero h2
+{
+	color: #eee8e1;
+	font-size: 54px;
+	letter-spacing: 2px;
+	text-align: right;
+		
 }
+
+#hero h3
+{
+	margin-bottom: 15px;
+	color: #eee8e1;
+	font-size: 18px;
+	letter-spacing: -1px;
+	text-align: right;
+}
+
+#heroHeading
+{
+	background-color: rgba(36,41,47,.8);
+	padding: 30px 20px 10px 50px; 
+	display: block;
+	/*position: absolute;
+	animation: 1.5s linear slidein;
+}
+
+@keyframes slidein {
+	0% {
+		right: -1000px;
+	}
+
+	80% {
+		right: 300px;
+	}
+
+	100% {
+		right: 400px;
+	}
+}
+
+	#intro::before
+{
+	content: '';
+	display: block;
+	width: 140px;
+	height: 187px;
+	background: url('../images/logo-badge-homepage.png');
+	margin-left: 60px;
+	position: sticky;
+	top: 100px;
+	cursor: pointer;
+}
+
+}*/
+
 
 /* start of about page */
 
