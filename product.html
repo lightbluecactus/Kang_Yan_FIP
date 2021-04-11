@@ -16,78 +16,86 @@
 		<h1 class="hidden">Coors Brewing Company</h1>
 		<header id="mainHeader">
 			<div id="logo"><a href="index.html">
-				<img src="images/logo-nav.svg" width="130" height="60" alt="CoorS logo">
+				<img src="images/logo-nav.svg" alt="CoorS logo">
 			</a></div>
 			<nav id="mainNav">
 				<h2 class="hidden">Main Navigation</h2>
-				<ul>
+				<button id="burger"></button>
+				<div id="burgerCon">
+					<ul id="burgerMenu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="#">Products</a></li>
+					<li><a href="product.html">Products</a></li>
 					<li><a href="advertisement.html">Commercials</a></li>
 					<li><a href="purchase.html">Orders</a></li>
-				</ul>
+					</ul>
+				</div>
 			</nav>
 		</header>
 
 		<main>
 			<section id="shoppingIcon">
-				<h2 class="hidden">SHOPPING ICON</h2>
-				<img src="images/bookmark.jpg" width="30" height="30" alt="bookmark">
-				<img src="images/chart.jpg" width="30" height="30" alt="chart">
+				<h2 class="hidden">Shopping Icon</h2>
+				<img src="images/icon-bookmark.svg" alt="bookmark">
+				<img src="images/icon-chart.svg" alt="chart">
 			</section>
 
 			<section id="promoProduct">
 				<h2 class="hidden">Beer products</h2>
-				<section>
+
+				<section id="sliderCon">
 					<h3 class="hidden">Promo product</h3>
-					<img src="images/product-promo.jpg" width="550" height="550" alt="Promo beer">
+					<div id="promoImg">
+						<img src="images/product-list-1.jpg" alt="Promo beer">
+						<img src="images/product-list-2.jpg" alt="6-pack beer">
+						<img src="images/product-list-3.jpg" alt="membership card">
+						<img src="images/product-list-4.jpg" alt="tote bag">
+						<img src="images/product-list-5.jpg" alt="t-shirt">
+					</div>
 				</section>
+
 				<section id="productText">
 					<h2>Premium Beer</h2>
 					<p>The classic taste of CoorS is only for you. Best served when refrigerated, or added ice into beer. 330mL 4.2%ALC/VOL.</p>
-					<h3 id="purchaseBut">Purchase</h3>
+					<h3 id="purchaseBut">View Options</h3>
 				</section>
+			</section> <!-- end of promoProduct -->
+ 
+			<section id="sliderControlBox">
+				<h2 class="hidden">Slider control</h2>
+					<img src="images/icon-bottle.svg" data-offset="0" class="sliderIcon">
+					<img src="images/icon-pack.svg" data-offset="1" class="sliderIcon">
+					<img src="images/icon-vip.svg" data-offset="2" class="sliderIcon">
+					<img src="images/icon-bag.svg" data-offset="3" class="sliderIcon">
+					<img src="images/icon-t-shirt.svg" data-offset="4" class="sliderIcon">
 			</section>
 
 			<section id="otherProduct">
-				<h2 class="hidden">Recommended products</h2>
-				<div>
-					<a href="product.html"><img src="images/product-small.jpg" width="260" height="180" alt="beer product 1"></a>
-				</div>
-				<div>
-					<a href="product.html"><img src="images/product-small.jpg" width="260" height="180" alt="beer product 1"></a>
-				</div>
-				<div>
-					<a href="product.html"><img src="images/product-small.jpg" width="260" height="180" alt="beer product 1"></a>
-				</div>
-			</section>
+				<h2>You may also like:</h2>
+					<img src="images/product-others-1.jpg" alt="beer product 1" data-offset="1">
+					<img src="images/product-others-2.jpg" alt="beer product 2" data-offset="3">
+					<img src="images/product-others-3.jpg" alt="beer product 3" data-offset="4">
+			</section> <!-- end of otherProduct -->
 		</main>
 
 		<footer id="mainFooter">
 			<div id="footerLogo">
-				<img src="images/logo-footer.svg" width="121" height="120" alt="CoorS logo badge">
+				<img src="images/logo-footer.svg" alt="CoorS logo badge">
 			</div>
 			<section id="socialMedia">
 				<h2 class="hidden">Social Media List</h2>
 				<ul>
-					<li><a href="http://www.facebook.com">
-                            <img src="images/facebook.svg" alt="facebook" width="30" height="30">
-                        </a></li>
-                    <li><a href="http://www.twitter.com">
-                            <img src="images/twitter.svg" alt="twitter" width="30" height="30">
-                        </a></li>
-                    <li><a href="http://www.youtube.com">
-                            <img src="images/youtube.svg" alt="youtube" width="30" height="30">
-                        </a></li>
-                  </ul>
+					<li><a href="http://www.facebook.com"><img src="images/icon-facebook.svg" alt="facebook"></a></li>
+                    <li><a href="http://www.twitter.com"><img src="images/icon-twitter.svg" alt="twitter"></a></li>
+                    <li><a href="http://www.youtube.com"><img src="images/icon-youtube.svg" alt="youtube"></a></li>
+                 </ul>
 			</section>
 			<nav id="footerNav">
 				<h2 class="hidden">Footer Navigation</h2>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="#">Products</a></li>
+					<li><a href="product.html">Products</a></li>
 					<li><a href="advertisement.html">Commercials</a></li>
 					<li><a href="purchase.html">Orders</a></li>
 				</ul>
