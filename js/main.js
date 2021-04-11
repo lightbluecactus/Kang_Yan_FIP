@@ -10,7 +10,10 @@
 			sliderIcon = document.querySelectorAll(".sliderIcon"),
 			promoImg = document.querySelector("#promoImg"),
 			productName = document.querySelector("#productText h2"),
-			productDesc = document.querySelector("#productText p");
+			productDesc = document.querySelector("#productText p"),
+
+			playList = document.querySelectorAll(".playList"),
+			videoPlayer = document.querySelector("#promoAd video");
 
 	const productContent = [
 		[`Premium Beer`, `The classic taste of CoorS is only for you. Best served when refrigerated, or added ice into beer. 330mL 4.2%ALC/VOL.`],
@@ -49,13 +52,20 @@
 					productContent[event.target.dataset.offset][1]);
 	}
 
+	function changeVideo(event) {
+		videoPlayer.src = `video/video-${event.target.dataset.videoref}.mp4`;
+		videoPlayer.play();
+	}
+
 
 	burgerBtn.addEventListener("click", hamburgerMenu, false);
 
 	aboutBanner.forEach(banner => banner.addEventListener("click", expandText));
 
 	sliderIcon.forEach(icon => icon.addEventListener("click", slideBanner));
-	sliderIcon.forEach(slider => slider.addEventListener("click", changeText));
+	sliderIcon.forEach(icon => icon.addEventListener("click", changeText));
+
+	playList.forEach(selector => selector.addEventListener("click", changeVideo));
 
 
 
