@@ -1,4 +1,4 @@
-# Midterm - Final Intergrated Project
+# Final Intergrated Project
 The website is a fictional beer brand that mashed up by Coors and Gas-X. The new brand "CoorS" takes style feature of Gas-X and the product content of Coors.
 
 <img src="images/readme-cover.jpg" alt="CoorS promotion">
