@@ -1,11 +1,18 @@
 # Midterm - Final Intergrated Project
 The website is a fictional beer brand that mashed up by Coors and Gas-X. The new brand "CoorS" takes style feature of Gas-X and the product content of Coors.
 
+<img src="images/readme-cover.jpg" alt="CoorS promotion">
+
 ## Prerequisites
 Only need a browser to view the website.
 
 ## Usage
-Clone this project, <kbd>cd</kbd> to your directory/download, and look through the website.
+Download or clone this project and <kbd>cd</kbd> to your directory, and look through the website.
+
+- The website starts from Validation page, though it hasn't linked to homepage yet.
+- On About page, you can click on the image to expand each paragraph.
+- On Product page, click on the rounded icons to view different products.
+- On Commercials page, select from the play list to view advertisements.
 
 ## License
 MIT License
