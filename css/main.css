@@ -16,7 +16,7 @@ ul
 	display: none;
 }
 
-img, video, object
+img, video, iframe
 {
 	max-width: 100%;
 }
@@ -1080,25 +1080,28 @@ article
 }
 
 /* start of purchase page */
-
+ 
 #purchaseMain
 {
-	margin: 60px 60px;
+	margin: 60px auto;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 #orderInfo
 {
-	width: 500px;
-	border-right: solid 1px #b51a1e;
+	margin: 0 15%;
 }
 
 #orderInfo p
 {
-	color: #24292f;
+	color: #091c93;
 	font-size: 18px;
+	font-weight: 700;
+	border-bottom: solid 1px #eee8e1;
+	padding-bottom: 20px;
 	margin-bottom: 30px;
+	margin-right: 15%;
 }
 
 form
@@ -1113,7 +1116,11 @@ input
 {
 	display: block;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid 1.5px #24292f;
 }
 
 #phone
@@ -1123,21 +1130,82 @@ input
 
 #map
 {
-	margin-left: 50px;
+	margin: 0 auto;
+	width: 100%;
+	background-color: #eee8e1;
+	padding: 30px auto;
 }
 
-#submit
+#map h2
 {
-	width: 280px;
-	background-color: #1f1f7f;
-	padding: 15px 30px 15px 30px;
-	margin-top: 60px;
-	border: none;
-	color: #eee8e1;
+	color: #091c93;
 	font-size: 18px;
+	margin: 30px 15% 20px 15%;
 }
 
-/* start of validator */
+#map iframe
+{
+	margin-left: 15%;
+}
+
+#orderSubmit
+{
+	width: 240px;
+	background-color: #b51a1e;
+	font-family: 'Cinzel', 'Times New Roman', serif;
+	color: #eee8e1;
+	font-size: 20px;
+	padding: 12px 5px 12px 5px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	border: none;
+	cursor: pointer;
+}
+
+#orderSubmit:hover
+{
+	background: linear-gradient(0deg, rgba(181,26,30,1) 0%, rgba(36,41,47,1) 100%);
+}
+
+@media screen and (min-width: 768px) {
+	#purchaseMain
+	{
+		flex-direction: row;
+	}
+
+	#orderInfo
+	{
+		margin-left: 10%;
+		margin-right: 0;
+		width: 800px;
+	}
+
+	#orderInfo p
+	{
+		margin-right: 0;
+	}
+
+	#map
+	{
+		margin-left: 18%;
+		margin-right: 0;
+		margin-top: -50px;
+		padding: 30px 5%;
+	}
+
+	#map h2
+	{
+		text-align: left;
+		margin: 30px 0;
+	}
+
+	#map iframe
+	{
+		margin: 0 auto;
+	}
+}
+
+/*start of validation*/
 
 #validationContainer
 {
