@@ -621,26 +621,29 @@ article
 {
 	color: #24292f;
 	font-size: 16px;
-	margin: 0 100px 100px 100px;
+	margin: 0 20px 100px 20px;
 	line-height: 38px;
 	letter-spacing: 1px;
 }
 
-#aboutResource
+#teamText, #historyText, #communityText
 {
-	margin: 100px 60px;
+	display: none;
 }
 
-#ourTeam
+#aboutResource
 {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 50px;
+	margin: 60px 0;
+}
+
+#teamImg
+{
+	display: none;
 }
 
 #teamTitle
 {
-	width: 550px;
+	min-width: 320px;
 	height: 270px;
 	background: url('../images/our-team.jpg') no-repeat;
 	display: flex;
@@ -654,35 +657,17 @@ article
 	color: #eee8e1;
 	font-size: 30px;
 	font-weight: 700;
-	background-color: rgba(0,0,0,.6);
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-#teamImg
-{
-	width: 300px;
-	height: 270px;
-	background: url('../images/our-team-right.jpg') no-repeat;
-	margin-left: 30px;
-}
-
-#history
-{
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 50px;
+	margin-top: -50px;
 }
 
 #historyTitle
 {
-	width: 550px;
+	min-width: 320px;
 	height: 270px;
 	background: url('../images/history.jpg') no-repeat;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-left: 30px;
 }
 
 #history p
@@ -691,21 +676,17 @@ article
 	color: #eee8e1;
 	font-size: 30px;
 	font-weight: 700;
-	background-color: rgba(0,0,0,.6);
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin-top: -50px;
 }
 
 #historyImg
 {
-	width: 300px;
-	height: 270px;
-	background: url('../images/history-left.jpg') no-repeat;
+	display: none;
 }
 
 #community
 {
-	width: 880px;
+	min-width: 320px;
 	height: 300px;
 	background: url('../images/community.jpg') no-repeat;
 	display: flex;
@@ -719,9 +700,81 @@ article
 	text-align: center;
 	color: #eee8e1;
 	font-size: 30px;
-	background-color: rgba(0,0,0,.6);
-	padding-top: 10px;
-	padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	article
+	{
+		margin: 0 100px 100px 100px;
+	}
+
+	#aboutResource
+	{
+		margin: 100px 40px;
+	}
+
+	#ourTeam
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 3%;
+	}
+
+	#teamTitle
+	{
+		width: 640px;
+		background: url('../images/our-team-desktop.jpg') no-repeat;
+		cursor: pointer;
+	}
+
+	#teamImg
+	{
+		display: block;
+		width: 300px;
+		height: 270px;
+		background: url('../images/our-team-right.jpg') no-repeat;
+		margin-left: 5%;
+	}
+
+	#history
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 3%;
+	}
+
+	#historyTitle
+	{
+		width: 640px;
+		background: url('../images/history-desktop.jpg') no-repeat;
+		cursor: pointer;
+	}
+
+	#historyImg
+	{
+		display: block;
+		width: 300px;
+		height: 270px;
+		background: url('../images/history-left.jpg') no-repeat;
+		margin-right: 5%;
+	}
+
+	#community
+	{
+		background: url('../images/community-desktop.jpg') no-repeat;
+		margin: 0 3% 50px 3%;
+		cursor: pointer;
+	}
+
+}
+
+@media screen and (min-width: 981px) {
+	#aboutResource
+	{
+		margin: 100px 80px;
+	}
 }
 
 /* start of product page */

@@ -16,17 +16,20 @@
 		<h1 class="hidden">Coors Brewing Company</h1>
 		<header id="mainHeader">
 			<div id="logo"><a href="index.html">
-				<img src="images/logo-nav.svg" width="130" height="60" alt="CoorS logo">
+				<img src="images/logo-nav.svg" alt="CoorS logo">
 			</a></div>
 			<nav id="mainNav">
 				<h2 class="hidden">Main Navigation</h2>
-				<ul>
+				<button id="burger"></button>
+				<div id="burgerCon">
+					<ul id="burgerMenu">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="product.html">Products</a></li>
 					<li><a href="advertisement.html">Commercials</a></li>
 					<li><a href="purchase.html">Orders</a></li>
-				</ul>
+					</ul>
+				</div>
 			</nav>
 		</header>
 
@@ -35,67 +38,58 @@
 			<h2 class="hidden">About Us</h2>
 			<section id="ourTeam">
 				<h3 class="hidden">Our Team</h3>
-				<div id="teamTitle">
-					<p>OUR TEAM</p>
+				<div id="teamTitle" class="aboutBanner" data-about="team">
+					<p data-about="team">OUR TEAM</p>
 				</div>
 				<div id="teamImg"></div>
 			</section>
-			<article>
+			<article id="teamText">
 				As one of the largest brewery across Canada, we are committed to make perfect tasting beers. To explore the best quality of beer products, we have been cooperated with local farming for over 40 years. Our team include professionals who come from different fields, such as beverage development specialist, material and packaging manager, as well as specialists on sales and business.
 			</article>
 
 			<section id="history">
 				<h3 class="hidden">History</h3>
 				<div id="historyImg"></div>
-				<div id="historyTitle">
-					<p>HISTORY</p>
+				<div id="historyTitle" class="aboutBanner" data-about="history">
+					<p data-about="history">HISTORY</p>
 				</div>
 			</section>
-			<article>
+			<article id="historyText">
 				CoorS is a historical brand. It is established in 1978, but before that, the founder Mr. Coors has already opened a brewery in 1950s. His son, Mr. Coors the junior, inherited the property and named the brewery after his family name. Since then, CoorS opened plants across the country and gradually became one of the mainstream brand in Canada beer market. In 2010, CoorS acquired Gas-X, putting emphasize on improving healthy lifestyle.
 			</article>
 
-			<section id="community">
-				<h2>Community</h2>
+			<section id="community" class="aboutBanner" data-about="community">
+				<h2 data-about="community">Community</h2>
 			</section>
-			<article>
+			<article id="communityText">
 				CoorS is opening for everyone who would like to make our lives colourful. Our community is always warm and welcoming just like CoorS, while many of the members are also sports fans from all over the world. CoorS beer is the bridge to bring us together. You can receive the latest news of CoorS, get coupon and discount at membership price, and most importantly, a custom fitness plan access in our linkage gyms. 
 			</article>
-
-
-
 		</section>
 		</main>
 
 		<footer id="mainFooter">
 			<div id="footerLogo">
-				<img src="images/logo-footer.svg" width="121" height="120" alt="CoorS logo badge">
+				<img src="images/logo-footer.svg" alt="CoorS logo badge">
 			</div>
 			<section id="socialMedia">
 				<h2 class="hidden">Social Media List</h2>
 				<ul>
-					<li><a href="http://www.facebook.com">
-                            <img src="images/facebook.svg" alt="facebook" width="30" height="30">
-                        </a></li>
-                    <li><a href="http://www.twitter.com">
-                            <img src="images/twitter.svg" alt="twitter" width="30" height="30">
-                        </a></li>
-                    <li><a href="http://www.youtube.com">
-                            <img src="images/youtube.svg" alt="youtube" width="30" height="30">
-                        </a></li>
-                  </ul>
+					<li><a href="http://www.facebook.com"><img src="images/icon-facebook.svg" alt="facebook"></a></li>
+                    <li><a href="http://www.twitter.com"><img src="images/icon-twitter.svg" alt="twitter"></a></li>
+                    <li><a href="http://www.youtube.com"><img src="images/icon-youtube.svg" alt="youtube"></a></li>
+                 </ul>
 			</section>
 			<nav id="footerNav">
 				<h2 class="hidden">Footer Navigation</h2>
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="product.html">Products</a></li>
 					<li><a href="advertisement.html">Commercials</a></li>
 					<li><a href="purchase.html">Orders</a></li>
 				</ul>
 			</nav>
-		</footer>
+		</footer> 
 
 		</div>
 
