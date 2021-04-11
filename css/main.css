@@ -1104,7 +1104,7 @@ article
 	margin-right: 15%;
 }
 
-form
+#purchaseMain form
 {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-weight: 300;
@@ -1112,7 +1112,7 @@ form
 	font-size: 16px;
 }
 
-input
+#purchaseMain input
 {
 	display: block;
 	margin-top: 10px;
@@ -1207,36 +1207,112 @@ input
 
 /*start of validation*/
 
-#validationContainer
+#validationCon 
 {
-	width: 1000px;
 	margin: 0 auto;
-	background: rgb(80,96,114);
-	background: linear-gradient(0deg, rgba(80,96,114,1) 0%, rgba(191,192,200,1) 24%, rgba(242,237,239,1) 38%, rgba(200,199,204,1) 66%, rgba(128,135,144,1) 100%);
-	padding-bottom: 150px;
+	height: 720px;
+	background: url(../images/validation-bckgrd.jpg) no-repeat;
+	display: flex;
+	flex-direction: column;
 }
 
-#validationContainer h2
+#validationCon img
 {
-	color: #24292f;
-	font-size: 30px;
+	width: 40%;
+	margin: 25px auto;
+}
+
+#validationCon h2
+{
+	width: 80%;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
 	text-align: center;
-	margin-bottom: 30px;
-}
-
-#validationLogo
-{
-	margin-top: 150px;
-	margin-left: 352px;
-	margin-bottom: 80px;
+	line-height: 34px;
+	margin: 15px auto;
 }
 
 #ageForm
 {
-	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
-#ageForm input
+#validationCon form
 {
-	margin-left: 430px;
+	font-size: 24px;
+	color: #ffd314;
+	font-family: 'Merriweather Sans', Arial, sans-serif;
+	font-weight: 400;
+	margin-right: 5px;
+}
+
+.birthCon input
+{
+	display: block;
+	width: 80px;
+	background-color: rgba(0,0,0,0);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid 2px #ffd314;
+}
+
+.birthCon
+{
+	display: flex;
+	flex-direction: row;
+	margin: 20px auto;
+}
+
+#validateSubmit
+{
+	width: 240px;
+	background-color: #091c93;
+	font-family: 'Cinzel', 'Times New Roman', serif;
+	color: #eee8e1;
+	font-size: 30px;
+	padding: 12px 5px 12px 5px;
+	margin: 40px auto;
+	border: none;
+	cursor: pointer;
+}
+
+#validateSubmit:hover
+{
+	background: linear-gradient(180deg, rgba(36,41,47,1) 0%, rgba(31,31,127,1) 100%);
+}
+
+
+@media screen and (min-width: 768px) {
+	#validationCon img
+	{
+		width: 25%;
+	}
+
+	#validationCon h2
+	{
+		font-size: 30px;
+	}
+
+	#ageForm
+	{
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 50%;
+		margin: 40px 25%;
+	}
+
+	#validateSubmit
+	{
+		margin: 50px auto;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	#validateSubmit
+	{
+		margin: 50px 30%;
+	}
 }
